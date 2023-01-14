@@ -1,0 +1,16 @@
+# transpose and flatten
+
+
+import numpy
+l1=[]
+lst=[]
+n,m=map(int,input().split())
+for i in range(n):
+    l1=list(map(int,input().split()))
+    lst.append(l1)
+    l1=[]
+arr=numpy.array(lst)
+print(numpy.transpose(lst))
+print(arr.flatten())
+
+
